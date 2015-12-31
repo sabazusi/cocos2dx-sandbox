@@ -66,9 +66,14 @@ bool Title::init()
     // add "obj character" splash screen"
     auto sprite = Sprite3D::create("chr_sword.obj");
     sprite->setTexture("chr_sword.png");
+    auto rotation = RotateBy::create(10, Vec3(0, 360, 0));
+    sprite->runAction(RepeatForever::create(rotation));
 
     // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    
+    // set scale
+    sprite->setScale(3.0);
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
