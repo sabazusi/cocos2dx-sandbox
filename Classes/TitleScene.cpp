@@ -1,4 +1,5 @@
 #include "TitleScene.h"
+#include "MainScene.h"
 
 USING_NS_CC;
 
@@ -48,13 +49,7 @@ bool Title::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    /////////////////////////////
-    // 3. add your codes below...
-
-    // add a label shows "Game Title"
-    // create and initialize a label
-    
-    auto label = Label::createWithTTF("Game Title", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Tap to Start", "fonts/Marker Felt.ttf", 24);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -63,20 +58,17 @@ bool Title::init()
     // add the label as a child to this layer
     this->addChild(label, 1);
 
-    // add "obj character" splash screen"
-    auto sprite = Sprite3D::create("chr_sword.obj");
-    sprite->setTexture("chr_sword.png");
-    auto rotation = RotateBy::create(10, Vec3(0, 360, 0));
-    sprite->runAction(RepeatForever::create(rotation));
-
-    // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-    
-    // set scale
-    sprite->setScale(3.0);
-
-    // add the sprite as a child to this layer
-    this->addChild(sprite, 0);
+    // event listener for move main scene.
+    auto listener = EventListenerTouchOneByOne::create();
+    listener->onTouchBegan = [this](Touch* touch, Event* event) {
+        auto main = Main::createScene();
+        auto transition = TransitionCrossFade::create(0.5, main);
+        
+        Director::getInstance()->replaceScene(transition);
+        
+        return true;
+    };
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
     
     return true;
 }
