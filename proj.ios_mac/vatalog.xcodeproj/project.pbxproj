@@ -60,6 +60,7 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		6B0134CB1C35173D00518F91 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0134CA1C35173D00518F91 /* MainScene.cpp */; };
+		6B0134CE1C368EB400518F91 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 6B0134CD1C368EB400518F91 /* models */; };
 		6B1813671C33F13B004ED07B /* chr_sword.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6B1813641C33F13B004ED07B /* chr_sword.obj */; };
 		6B1813681C33F13B004ED07B /* chr_sword.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1813651C33F13B004ED07B /* chr_sword.png */; };
 		6B1813691C33F13B004ED07B /* chr_sword.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 6B1813661C33F13B004ED07B /* chr_sword.mtl */; };
@@ -166,6 +167,7 @@
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		6B0134CA1C35173D00518F91 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		6B0134CC1C35174D00518F91 /* MainScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		6B0134CD1C368EB400518F91 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 		6B1813641C33F13B004ED07B /* chr_sword.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr_sword.obj; sourceTree = "<group>"; };
 		6B1813651C33F13B004ED07B /* chr_sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chr_sword.png; sourceTree = "<group>"; };
 		6B1813661C33F13B004ED07B /* chr_sword.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr_sword.mtl; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6B0134CD1C368EB400518F91 /* models */,
 				6B1813641C33F13B004ED07B /* chr_sword.obj */,
 				6B1813651C33F13B004ED07B /* chr_sword.png */,
 				6B1813661C33F13B004ED07B /* chr_sword.mtl */,
@@ -500,6 +503,7 @@
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
+				6B0134CE1C368EB400518F91 /* models in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
