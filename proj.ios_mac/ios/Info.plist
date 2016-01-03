@@ -47,7 +47,7 @@
 		<string>Icon-180</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>net.sabazusi.vatalog</string>
+	<string>net.sabazusi.cocos2dx-sandbox</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
