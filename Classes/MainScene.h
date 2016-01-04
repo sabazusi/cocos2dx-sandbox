@@ -8,7 +8,9 @@ class Main : public cocos2d::Layer
 public:
     static cocos2d::Scene* createScene();
     
-    virtual bool init();
+    bool init() override;
+    
+    void update(float dt) override;
     
     CREATE_FUNC(Main);
 };

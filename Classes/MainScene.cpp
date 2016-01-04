@@ -34,6 +34,12 @@ bool Main::init()
     
     // add the sprite as a child to this layer
     this->addChild(sprite, 1);
+    this->scheduleUpdate();
     
     return true;
+};
+
+void Main::update(float dt)
+{
+    log("%f", dt);
 };
