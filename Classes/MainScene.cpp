@@ -20,20 +20,20 @@ bool Main::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
-    // add "obj character" splash screen"
+    auto background = Sprite::create("background.png");
+    background->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
+    this->addChild(background, 0);
+    
+    
     auto sprite = Sprite3D::create("models/chr_sword.obj");
     sprite->setTexture("models/chr_sword.png");
     auto rotation = RotateBy::create(10, Vec3(0, 360, 0));
     sprite->runAction(RepeatForever::create(rotation));
 
-    // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-    
-    // set scale
     sprite->setScale(3.0);
-    
-    // add the sprite as a child to this layer
     this->addChild(sprite, 1);
+    
     this->scheduleUpdate();
     
     return true;
@@ -41,5 +41,4 @@ bool Main::init()
 
 void Main::update(float dt)
 {
-    log("%f", dt);
 };
