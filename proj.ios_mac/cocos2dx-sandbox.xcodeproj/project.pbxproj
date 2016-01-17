@@ -64,6 +64,7 @@
 		6B1813671C33F13B004ED07B /* chr_sword.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6B1813641C33F13B004ED07B /* chr_sword.obj */; };
 		6B1813681C33F13B004ED07B /* chr_sword.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1813651C33F13B004ED07B /* chr_sword.png */; };
 		6B1813691C33F13B004ED07B /* chr_sword.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 6B1813661C33F13B004ED07B /* chr_sword.mtl */; };
+		6B872EC31C4B98BC0048F9D5 /* map.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 6B872EC21C4B98BC0048F9D5 /* map.tmx */; };
 		6BDFF6361C3B4AE300959168 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDFF6351C3B4AE300959168 /* background.png */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -172,6 +173,7 @@
 		6B1813641C33F13B004ED07B /* chr_sword.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr_sword.obj; sourceTree = "<group>"; };
 		6B1813651C33F13B004ED07B /* chr_sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chr_sword.png; sourceTree = "<group>"; };
 		6B1813661C33F13B004ED07B /* chr_sword.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr_sword.mtl; sourceTree = "<group>"; };
+		6B872EC21C4B98BC0048F9D5 /* map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map.tmx; sourceTree = "<group>"; };
 		6BDFF6351C3B4AE300959168 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -305,6 +307,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6B872EC21C4B98BC0048F9D5 /* map.tmx */,
 				6BDFF6351C3B4AE300959168 /* background.png */,
 				6B0134CD1C368EB400518F91 /* models */,
 				6B1813641C33F13B004ED07B /* chr_sword.obj */,
@@ -502,6 +505,7 @@
 				6B1813691C33F13B004ED07B /* chr_sword.mtl in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				6B872EC31C4B98BC0048F9D5 /* map.tmx in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,

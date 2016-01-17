@@ -20,10 +20,9 @@ bool Main::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
-    auto background = Sprite::create("background.png");
-    background->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
-    this->addChild(background, 0);
-    
+    TMXTiledMap *map = TMXTiledMap::create("map.tmx");
+    map->setPosition(200, 200);
+    this->addChild(map);
     
     auto sprite = Sprite3D::create("models/chr_sword.obj");
     sprite->setTexture("models/chr_sword.png");
