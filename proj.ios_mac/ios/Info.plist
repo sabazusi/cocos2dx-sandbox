@@ -10,6 +10,8 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>Icon-57.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.sabazusi.irasutowar</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-29</string>
@@ -46,8 +48,6 @@
 		<string>Icon-152</string>
 		<string>Icon-180</string>
 	</array>
-	<key>CFBundleIdentifier</key>
-	<string>net.sabazusi.cocos2dx-sandbox</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -69,6 +69,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
 </dict>
 </plist>
